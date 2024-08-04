@@ -1,0 +1,115 @@
+<html><head><base href="https://cuty.io/arz0k">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descarga tu Ebook de Recetas para Diabéticos</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f5ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+  }
+  h1 {
+    color: #3a3a3a;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  .btn-download {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  .btn-download:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+  }
+  .icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+  .features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  .feature {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin: 0 10px;
+  }
+  .feature-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">📚</div>
+    <h1>Tu Ebook de Recetas para Diabéticos</h1>
+    <p>¡Descarga ahora tu ebook gratuito lleno de deliciosas recetas adaptadas para personas con diabetes! Cuida tu salud sin renunciar al sabor.</p>
+    <a href="https://cuty.io/arz0k" class="btn-download" id="downloadBtn">Descargar Ebook</a>
+    
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">🥗</div>
+        <p>Recetas Saludables</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📊</div>
+        <p>Control de Carbohidratos</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">👨‍🍳</div>
+        <p>Fácil de Preparar</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('downloadBtn').addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Cambia el texto del botón
+      this.textContent = 'Descargando...';
+      
+      // Simula un proceso de descarga
+      setTimeout(() => {
+        this.textContent = '¡Descarga Completada!';
+        this.style.backgroundColor = '#45a049';
+        
+        // Redirige después de un breve retraso
+        setTimeout(() => {
+          window.location.href = 'https://cuty.io/arz0k';
+        }, 1000);
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
